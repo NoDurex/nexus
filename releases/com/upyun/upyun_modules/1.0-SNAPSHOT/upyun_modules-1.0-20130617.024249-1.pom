@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.upyun</groupId>
+	<artifactId>upyun_modules</artifactId>
+	<version>1.0-SNAPSHOT</version> 
+        <packaging>pom</packaging>
+	
+	<modules>
+		<module>upyun-parent</module>
+		<module>upyun-memcache</module>
+		<module>upyun-common</module>
+		<module>upyun-dao</module>
+		<module>upyun-orm</module>
+		<module>upyun-service</module>
+		<module>upyun-configuration</module>
+		<module>upyun-zk</module>
+        <module>upyun-thrift</module>
+    </modules>
+    
+    <distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<name>Nexus Release Repository</name>
+			<url>http://mvn.upai.com/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus</id>
+			<name>Nexus Snapshot Repository</name>
+			<url>http://mvn.upai.com/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+</project>
